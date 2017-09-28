@@ -1,0 +1,19 @@
+{
+  "name": "logpapaya",
+  "version": "1.0.0",
+  "description": "Looging module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./node_modules/.bin/gulp build"
+  },
+  "repository": "https://noam1610@bitbucket.org/labacario/logpapaya.git",
+  "author": "noam1610 <noam.benlolo@getcarmoov.com>",
+  "license": "MIT",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "logdna": "^1.4.0",
+    "servicelychee": "https://github.com/tgorka/servicelychee.git",
+    "typescript": "^2.5.3",
+    "winston": "^2.3.1"
+  }
+}
