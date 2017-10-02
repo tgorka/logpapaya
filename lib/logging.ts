@@ -31,27 +31,27 @@ class Logging {
         }
     }
 
-    public error(message: any) {
+    public error(message: any, title?: any) {
         winston.level = 'error';
         winston.log('error', message);
     }
-    public warn(message: any) {
+    public warn(message: any, title?: any) {
         winston.level = 'warn';
         winston.log('warn', message);
     }
-    public info(message: any) {
+    public info(message: any, title?: any) {
         winston.level = 'info';
         winston.log('info', message);
     }
-    public verbose(message: any) {
+    public verbose(message: any, title?: any) {
         winston.level = 'verbose';
         winston.log('verbose', message);
     }
-    public debug(message: any) {
+    public debug(message: any, title?: any) {
         winston.level = 'debug';
         winston.log('debug', message);
     }
-    public silly(message: any) {
+    public silly(message: any, title?: any) {
         winston.level = 'silly';
         winston.log('silly', message);
     }
