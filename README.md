@@ -41,6 +41,7 @@ Now it is ready to use
 #### LEVELS
 
 The levels used are the following : 
+***
 0. error
 1. warn
 2. info 
@@ -51,6 +52,7 @@ The levels used are the following :
 By default this system will be used and sent to logDNA
 
 If you put the **hostname** equal to "production" only the following levels will be considered: 
+***
 0. error
 1. warn
 2. info
