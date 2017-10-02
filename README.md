@@ -1,7 +1,7 @@
 # logPapaya
 
 This module is responsible for all the system logging.
-It has two goals : 
+It has two goals :
     - add levels
     - link it with logDNA
 
@@ -16,7 +16,7 @@ You just need to add the npm package :
 npm install https://github.com/tgorka/logpapaya --save
 ```
 
-Or using yarn 
+Or using yarn
 ```bash
 yarn add https://github.com/tgorka/logpapaya --save
 ```
@@ -30,7 +30,7 @@ logging.init({
     app: "the name of your app",
     env: "the environnement you use can be anything",
     key: "Your logDNA key"
-}, "hostname / can be anything / prod . dev . test");
+}, "hostname / can be anything / production . dev . test");
 ```
 
 Now it is ready to use
@@ -40,18 +40,18 @@ Now it is ready to use
 
 #### LEVELS
 
-The levels used are the following : 
+The levels used are the following :
 <br />
 1. error
 1. warn
-2. info 
+2. info
 3. verbose
 4. debug
 5. silly
 
 By default this system will be used and sent to logDNA
 
-If you put the **hostname** equal to "production" only the following levels will be considered: 
+If you put the **hostname** equal to "production" only the following levels will be considered:
 <br />
 1. error
 1. warn
@@ -59,7 +59,7 @@ If you put the **hostname** equal to "production" only the following levels will
 
 #### Method
 
-For each of one of the levels we have a method: 
+For each of one of the levels we have a method:
 ```javascript
 import { logging } from "logpapaya";
 //For example for the error level
