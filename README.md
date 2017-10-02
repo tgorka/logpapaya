@@ -42,7 +42,7 @@ Now it is ready to use
 
 The levels used are the following : 
 <br />
-0. error
+1. error
 1. warn
 2. info 
 3. verbose
@@ -53,7 +53,7 @@ By default this system will be used and sent to logDNA
 
 If you put the **hostname** equal to "production" only the following levels will be considered: 
 <br />
-0. error
+1. error
 1. warn
 2. info
 
