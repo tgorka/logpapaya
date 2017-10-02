@@ -33,27 +33,57 @@ class Logging {
 
     public error(message: any, title?: any) {
         winston.level = 'error';
-        winston.log('error', "--> ", title, " <--", message);
+        if (title) {
+            winston.log('error', "--> ", title || '', " <--", message);
+        }
+        else{
+            winston.log('error', message)
+        }
     }
     public warn(message: any, title?: any) {
         winston.level = 'warn';
-        winston.log('warn', "--> ", title, " <--", message);
+        if (title) {
+            winston.log('warn', "--> ", title || '', " <--", message);
+        }
+        else{
+            winston.log('warn', message)
+        }
     }
     public info(message: any, title?: any) {
         winston.level = 'info';
-        winston.log('info', "--> ", title, " <--", message);
+        if (title) {
+            winston.log('info', "--> ", title || '', " <--", message);
+        }
+        else{
+            winston.log('info', message)
+        }
     }
     public verbose(message: any, title?: any) {
         winston.level = 'verbose';
-        winston.log('verbose', "--> ", title, " <--", message);
+        if (title) {
+            winston.log('verbose', "--> ", title || '', " <--", message);
+        }
+        else{
+            winston.log('verbose', message)
+        }
     }
     public debug(message: any, title?: any) {
         winston.level = 'debug';
-        winston.log('debug', "--> ", title, " <--", message);
+        if (title) {
+            winston.log('debug', "--> ", title || '', " <--", message);
+        }
+        else{
+            winston.log('debug', message)
+        }
     }
     public silly(message: any, title?: any) {
         winston.level = 'silly';
-        winston.log('silly', "--> ", title, " <--", message);
+        if (title) {
+            winston.log('silly', "--> ", title || '', " <--", message);
+        }
+        else{
+            winston.log('silly', message)
+        }
     }
 
 }
