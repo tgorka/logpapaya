@@ -33,27 +33,27 @@ class Logging {
 
     public error(message: any, title?: any) {
         winston.level = 'error';
-        winston.log('error', message);
+        winston.log('error', "--> ", title, " <--", message);
     }
     public warn(message: any, title?: any) {
         winston.level = 'warn';
-        winston.log('warn', message);
+        winston.log('warn', "--> ", title, " <--", message);
     }
     public info(message: any, title?: any) {
         winston.level = 'info';
-        winston.log('info', message);
+        winston.log('info', "--> ", title, " <--", message);
     }
     public verbose(message: any, title?: any) {
         winston.level = 'verbose';
-        winston.log('verbose', message);
+        winston.log('verbose', "--> ", title, " <--", message);
     }
     public debug(message: any, title?: any) {
         winston.level = 'debug';
-        winston.log('debug', message);
+        winston.log('debug', "--> ", title, " <--", message);
     }
     public silly(message: any, title?: any) {
         winston.level = 'silly';
-        winston.log('silly', message);
+        winston.log('silly', "--> ", title, " <--", message);
     }
 
 }
