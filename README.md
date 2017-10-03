@@ -35,7 +35,7 @@ logging.init({
 
 Now it is ready to use
 
-
+·
 ### Utilisation
 
 #### LEVELS
